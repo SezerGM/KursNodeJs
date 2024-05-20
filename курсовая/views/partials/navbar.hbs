@@ -1,0 +1,16 @@
+<nav>
+  <div class="nav-wrapper">
+    <a href="/" class="brand-logo">Simple-forum</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      {{#if user}}
+        <li><a href="/addArticles">Add Articles</a></li>
+        <li><a href="/articles">Articles</a></li>
+        <li><a href="/myArticles">MyArticles</a></li>
+        <li><a href="/logout">LogOut</a></li>
+      {{else}}
+        <li><a href="/signIn">Sign In</a></li>
+        <li><a href="/signUp">Sign Up</a></li>
+      {{/if}}
+    </ul>
+  </div>
+</nav>

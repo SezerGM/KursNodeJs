@@ -1,0 +1,8 @@
+ <div class="collection">
+    {{#each topic}}
+    <a href="/topic?id={{this._id}}" class="collection-item">Topic: {{this.title}} - createdBy "{{this.user}}"</a>
+    {{/each}}
+    
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>

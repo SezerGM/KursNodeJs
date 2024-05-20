@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>{{topic.title}}</title>
+</head>
+<body>
+    <h1>{{topic.title}}</h1>
+    <p>{{topic.description}}</p>
+
+    <form action="/addComment?topicId={{topic._id}}" method="POST">
+        <textarea name="comment" required></textarea>
+        <button type="submit">Add Comment</button>
+    </form>
+
+    <h2>Comments</h2>
+    {{#each comments}}
+        <div class="comment">
+            <p><b>{{this.user}}</b>: {{this.comment}}</p>
+        </div>
+    {{/each}}
+</body>
+</html>
